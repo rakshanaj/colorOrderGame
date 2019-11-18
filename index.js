@@ -65,7 +65,7 @@ $(".btn").click(function(e){
     check(userPattern.length-1);
 });
 
-$(document).one("keypress", function(){
+$(document).keypress(function(){
     if(!started){
         $("h1").html("Level 0");
     nextSequence();
@@ -78,6 +78,7 @@ function startOver(){
     level=0;
     gamePattern=[];
     userPattern=[];
+    started=false;
 
 }
 
